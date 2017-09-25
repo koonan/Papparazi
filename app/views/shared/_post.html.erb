@@ -1,0 +1,11 @@
+<%= form_for(@post) do |f| %>
+<%= f.text_area :content, placeholder: "Compose new post..."  %>
+<%= form_for(@location) do |l| %>
+<%= l.text_area :address, placeholder: "address..." %>
+<%= l.number_field :longitude, placeholder: "longitude..", class: :text_field, step: :any %>
+<%= l.number_field :latitude, placeholder: "latitude..", class: :text_field, step: :any %>
+<%= f.submit "Post"%>
+
+ <% end %>
+
+<% end %>

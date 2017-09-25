@@ -1,0 +1,14 @@
+<br />
+<br />
+<h2> Current User </h2>
+
+<h1><%= current_user.name %></h1>
+<span><%= link_to "view my profile", current_user %></span>
+<br  />
+<br />
+<span><%= pluralize(current_user.relationships.count, "followed users") %></span>
+
+<br />
+<br />
+<br />
+<br />

@@ -1,0 +1,19 @@
+<h1>Welcome to Paparazzi App</h1>
+
+<% if logged_in? %>
+<aside >
+<section >
+<%= render 'shared/user_info' %>
+</section>
+<section >
+<%= render 'shared/post' %>
+
+</section>
+</aside>
+
+<h2>Posts Feed</h2>
+<%= render 'shared/feed' %>
+<% else %>
+<%= link_to "Sign up now!", signup_path %>
+
+<% end %>

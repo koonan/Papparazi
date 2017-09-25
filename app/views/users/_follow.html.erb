@@ -1,0 +1,6 @@
+<%= form_for(@relationships) do |f| %>
+  <div><%= hidden_field_tag :followed_id, params[:id] %></div>
+  <%= f.text_area :followed_id, placeholder: "put user id" %>
+
+  <%= f.submit "Follow" %>
+<% end %>

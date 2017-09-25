@@ -1,0 +1,2 @@
+module LocprefsHelper
+end

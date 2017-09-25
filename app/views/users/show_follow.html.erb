@@ -1,0 +1,14 @@
+<section >
+<h1><%= @user.name %></h1>
+<span><%= link_to "view my profile", @user %></span>
+<span><b>Posts:</b> <%= @user.picroposts.count %></span>
+</section>
+
+
+
+
+<% if @users.any? %>
+<ul>
+<%= render @users %>
+</ul>
+<% end %>

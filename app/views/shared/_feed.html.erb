@@ -1,0 +1,54 @@
+
+      <table>
+      <thead>
+        <tr>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+<% if !(@feed_items == nil) %>
+        <% @feed_items.each do |post| %>
+        <% if !(post == nil)%>
+          <tr>
+             <% id =  post["id"]  %>
+            <% if !(id == nil) %>
+            <% @p = Post.find(id)%>
+            <% if !(@p == nil) %>
+            <%= "post: " + @p.content %>
+            <% end %>
+            <br>
+            <br />
+            <% end %>
+          </tr>
+
+        <% end %>
+          <% end %>
+          <% end %>
+      </tbody>
+    </table>
+
+
+
+
+<% if @friends_feeds.any? %>
+
+<h2>Friends Feed</h2>
+
+    <% @friends_feeds.each do |feed| %>
+        <%    if feed.following_id != nil %>
+            <%   @user = User.find(feed.following_id) %>
+              <%  if @user != nil %>
+                  <%= @user.name %>
+                   <br />
+                  <% @user.posts.each do |post| %>
+                    <% @p = Post.find(post["id"]) %>
+                    <% if @p != nil %>
+                        <%= @p.content %>
+                    <% end %>
+                    <br />
+                  <%  end %>
+               <%  end %>
+          <% end %>
+      <% end %>
+<% end %>

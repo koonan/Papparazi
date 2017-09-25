@@ -1,0 +1,26 @@
+<aside>
+  <section>
+    <h1>
+      <%= @user.name %>
+    </h1>
+  </section>
+</aside>
+
+<%= render 'follow_form' if logged_in? %>
+
+<h3>Edit your Celebrity Preferences: </h3>
+
+  <%= form_for(@pref) do |f| %>
+  <%= f.text_area :name, placeholder: "add new celebrity preferenc" %>
+  <%= f.submit "Add"%>
+  <% end %>
+
+
+
+<h3>Edit your Location Preferences: </h3>
+<%= form_for(@pref) do |f| %>
+<%= f.text_area :address, placeholder: "address..." %>
+<%= f.number_field :longitude, placeholder: "longitude..", class: :text_field, step: :any %>
+<%= f.number_field :latitude, placeholder: "latitude..", class: :text_field, step: :any %>
+<%= f.submit "Add"%>
+<% end %>

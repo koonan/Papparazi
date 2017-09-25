@@ -1,0 +1,99 @@
+ [
+  {
+   "user" :
+    {
+      "email" : "foo@gmail.com",
+      "password":"123",
+      "password_confirmation":"123",
+      "name":"foo",
+      "date_of_birth":"02/06/1995",
+      "location" : {
+         "city" :  "Alexandria",
+         "country" : "Egypt",
+         "latitude" : 30,
+         "Longitude":30
+      }
+    }
+
+  },
+  {
+    "user" :
+    {
+      "email" : "zoo@gmail.com",
+      "password":"123",
+      "password_confirmation":"123",
+      "name":"zoo",
+      "date_of_birth":"02/06/1995",
+      "location" : {
+        "city" :  "Alexandria",
+        "country" : "Egypt",
+        "latitude" : 30,
+        "Longitude":30
+      }
+    }
+  },
+  {
+    "user" :
+    {
+      "email" : "ali@gmail.com",
+      "password":"123",
+      "password_confirmation":"123",
+      "name":"ali",
+      "date_of_birth":"02/06/1995",
+      "location" : {
+        "city" :  "Alexandria",
+        "country" : "Egypt",
+        "latitude" : 30,
+        "Longitude":30
+      }
+    }
+  },
+  {
+    "user" :
+    {
+      "email" : "amir@gmail.com",
+      "password":"123",
+      "password_confirmation":"123",
+      "name":"amir",
+      "date_of_birth":"02/06/1995",
+      "location" : {
+        "city" :  "Alexandria",
+        "country" : "Egypt",
+        "latitude" : 30,
+        "Longitude":30
+      }
+    }
+  },
+  {
+    "user" :
+    {
+      "email" : "hend@gmail.com",
+      "password":"123",
+      "password_confirmation":"123",
+      "name":"hend",
+      "date_of_birth":"02/06/1995",
+      "location" : {
+        "city" :  "Alexandria",
+        "country" : "Egypt",
+        "latitude" : 30,
+        "Longitude":30
+      }
+    }
+  },
+  {
+    "user" :
+    {
+      "email" : "mohamed@gmail.com",
+      "password":"123",
+      "password_confirmation":"123",
+      "name":"mohamed",
+      "date_of_birth":"02/06/1995",
+      "location" : {
+        "city" :  "Alexandria",
+        "country" : "Egypt",
+        "latitude" : 30,
+        "Longitude":30
+      }
+    }
+  }
+]
